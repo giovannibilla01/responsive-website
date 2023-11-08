@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/printer.css" media="print">
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,300,0,-25" />
+</head>
+<body>
+    <header>
+        <div>
+            <span id="logo-phone" class="material-symbols-rounded">
+                phone_iphone
+            </span>
+            <span id="logo-tablet" class="material-symbols-rounded">
+                tablet_mac
+            </span>
+            <span id="logo-computer" id="logo" class="material-symbols-rounded">
+                computer
+            </span>
+            <span id="logo-television" class="material-symbols-rounded">
+                tv
+            </span>
+            <h1>Responsive Website</h1>
+        </div>
+        <span id="burger-menu" class="material-symbols-rounded" onclick="showMenu()">
+            menu
+        </span>
+    </header>
+    <menu id="floating-menu">
+        <ul>
+            <li onclick="exchangeContent('phone')">Smartphones</li>
+            <li onclick="exchangeContent('tablet')">Tablets</li>
+            <li onclick="exchangeContent('computer')">Computers</li>
+            <li onclick="exchangeContent('television')">Televisions</li>
+        </ul>
+    </menu>
+    <main>
+        <article id="phone">
+            <h2>Phone</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus sit molestiae eum tempore. Ipsa distinctio explicabo tempora libero esse necessitatibus enim alias sunt, magnam odit corrupti ullam, in maiores?
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sapiente amet inventore ratione fugiat voluptatum fugit doloribus, autem cum optio ut cupiditate repellat eum molestiae officiis nisi libero. Laudantium, inventore.
+            </p>
+        </article>
+        <article id="tablet">
+            <h2>Tablet</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus sit molestiae eum tempore. Ipsa distinctio explicabo tempora libero esse necessitatibus enim alias sunt, magnam odit corrupti ullam, in maiores?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, sint. Impedit animi quia delectus recusandae aliquid eos. Explicabo id laudantium sit consectetur accusantium voluptates dolorem, facilis libero reprehenderit recusandae quos?
+            </p>
+        </article>
+        <article id="computer">
+            <h2>Computer</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus sit molestiae eum tempore. Ipsa distinctio explicabo tempora libero esse necessitatibus enim alias sunt, magnam odit corrupti ullam, in maiores?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci fuga dolores recusandae optio doloremque vitae rem similique, harum, nulla corporis iure aspernatur amet quis. Cumque officiis aliquam laboriosam sunt?
+            </p>
+        </article>
+        <article id="television">
+            <h2>Television</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus sit molestiae eum tempore. Ipsa distinctio explicabo tempora libero esse necessitatibus enim alias sunt, magnam odit corrupti ullam, in maiores?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae consectetur iusto a earum, illo voluptates quisquam nihil quidem ad harum quis, quo fuga. Recusandae suscipit quos, distinctio accusantium culpa qui.
+            </p>
+        </article>
+    </main>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
