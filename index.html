@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsiveness</title>
     <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="css/printer.css" media="print">
 
     <!-- Google Icons -->
@@ -30,6 +31,14 @@
         <span id="burger-menu" class="material-symbols-rounded" onclick="showMenu()">
             menu
         </span>
+        <menu id="fixed-menu">
+            <ul>
+                <li onclick="exchangeContent('phone')">Smartphones</li>
+                <li onclick="exchangeContent('tablet')">Tablets</li>
+                <li onclick="exchangeContent('computer')">Computers</li>
+                <li onclick="exchangeContent('television')">Televisions</li>
+            </ul>
+        </menu>
     </header>
     <menu id="floating-menu">
         <ul>

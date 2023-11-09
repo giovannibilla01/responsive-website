@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    html, body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+
+    header div span#logo-phone { display: none; }
+    header div span#logo-tablet { display: block; }
+    header div span#logo-computer { display: none; }
+    header div span#logo-television { display: none; }
+
+    main article#phone { display: none; }
+    main article#tablet { display: block; }
+    main article#computer { display: none; }
+    main article#television { display: none; }
+}
+
+/* Computers */
+@media screen and (min-width: 992px) and (max-width: 2000px) {
+    html, body {
+        background-image: url(../images/back-pc.jpg);
+    }
+
+    header div span#logo-phone { display: none; }
+    header div span#logo-tablet { display: none; }
+    header div span#logo-computer { display: block; }
+    header div span#logo-television { display: none; }
+
+    header menu#fixed-menu {
+        display: block;
+    }
+
+    header span#burger-menu {
+        display: none;
+    }
+    
+    main {
+        max-width: 800px;
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
+
+    main p {
+        text-indent: 1.2em;
+    }
+
+    main article#phone { display: none; }
+    main article#tablet { display: none; }
+    main article#computer { display: block; }
+    main article#television { display: none; }
+}
+
+/* Televisions */
+@media screen and (min-width: 2000px) {
+    html, body {
+        background-image: url(../images/back-tv.jpg);
+    }
+
+    header div span#logo-phone { display: none; }
+    header div span#logo-tablet { display: none; }
+    header div span#logo-computer { display: block; }
+    header div span#logo-television { display: none; }
+    
+    header menu#fixed-menu {
+        display: block;
+    }
+
+    header span#burger-menu {
+        display: none;
+    }
+    
+    main {
+        max-width: 1200px;
+        font-size: 2.3em;
+        line-height: 2.7em;
+    }
+
+    main p {
+        text-indent: 3em;
+    }
+
+    main article#phone { display: none; }
+    main article#tablet { display: none; }
+    main article#computer { display: none; }
+    main article#television { display: block; }
+}

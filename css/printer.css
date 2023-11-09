@@ -3,3 +3,16 @@
 * {
     font-family: 'Times New Roman', Times, serif;
 }
+
+span#burger-menu { display: none; }
+menu#fixed-menu { display: none; }
+menu#floating-menu { display: none; }
+
+main article#phone { display: block; }
+main article#tablet { display: block; }
+main article#computer { display: block; }
+main article#television { display: block; }
+
+main::after {
+    content: "Artigo por Lorem | Impresso do Site Lorem";
+}

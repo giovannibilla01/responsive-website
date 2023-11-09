@@ -1,4 +1,5 @@
 const menu = document.getElementById("floating-menu")
+menu.style.display = 'none';
 
 const phone_icon = document.getElementById("logo-phone")
 const tablet_icon = document.getElementById("logo-tablet")
@@ -9,6 +10,12 @@ const phone = document.getElementById("phone")
 const tablet = document.getElementById("tablet")
 const computer = document.getElementById("computer")
 const television = document.getElementById("television")
+
+window.addEventListener("resize", () => {
+    if (menu.style.display != 'none') {
+        menu.style.display = 'none'
+    }
+});
 
 function exchangeContent (content) {
     const show = document.getElementById(content)
@@ -31,5 +38,9 @@ function exchangeContent (content) {
 }
 
 function showMenu () {
-    menu.style.display = 'block'
+    if (menu.style.display == 'none') {
+        menu.style.display = 'block'
+    } else {
+        menu.style.display = 'none'
+    }
 }

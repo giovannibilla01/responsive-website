@@ -11,7 +11,7 @@
     --collor03: #737373;
     --collor04: #BFBFBF;
     --collor05: #F2F2F2;
-    --collor05-1: #f2f2f2d5;
+    --collor05-1: #f2f2f2e6;
 }
 
 * {
@@ -21,7 +21,7 @@
     user-select: none;
 }
 
-body {
+html, body {
     height: 100vh;
 
     background-image: url(../images/back-phone.jpg);
@@ -60,29 +60,54 @@ header span#burger-menu:hover {
     cursor: pointer;
 }
 
-menu {
+menu#fixed-menu {
+    display: none;
+    margin-left: 10px;
+}
+
+menu#fixed-menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+menu#fixed-menu ul li {
+    text-decoration: none;
+    padding: 0em 1em;
+    text-align: center;
+}
+
+menu#fixed-menu ul li:hover {
+    font-weight: bold;
+    color: var(--collor05);
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+
+menu#floating-menu {
     display: none;
     position: absolute;
     top: 3em;
     right: 1em;
 }
 
-menu ul {
+menu#floating-menu ul {
     list-style: none;
 }
 
-menu ul li {
+menu#floating-menu ul li {
     text-decoration: none;
-    font-weight: 500;
     color: var(--collor05);
+    font-weight: 500;
+    text-align: center;
     background-color: var(--collor03);
     border-radius: 7px;
     padding: 1em;
     margin: 0.2em;
-    width: 30vw;
+    width: 35vw;
 }
 
-menu ul li:hover {
+menu#floating-menu ul li:hover {
     color: var(--collor03);
     font-weight: 600;
     background-color: var(--collor05);
@@ -100,6 +125,10 @@ main article {
     border-radius: 10px;
     padding: 1em 1em 3em 1em;
     margin-top: 1em;
+}
+
+main article h2 {
+    margin: 1em 0.5em;
 }
 
 main article p {
